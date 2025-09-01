@@ -50,7 +50,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-background">
+    <section id="services" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="text-center mb-16">
@@ -92,7 +92,12 @@ const ServicesSection = () => {
               </ul>
               
               <Button variant="ghost" className="text-primary hover:text-primary-light group p-0">
-                Learn More 
+                <span onClick={() => {
+                  const element = document.getElementById('contact');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}>Learn More</span>
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:transform group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
@@ -109,7 +114,12 @@ const ServicesSection = () => {
             technology solution that fits your specific requirements and budget.
           </p>
           <Button size="lg" variant="gradient" className="px-8">
-            Schedule a Consultation
+            <span onClick={() => {
+              const element = document.getElementById('contact');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}>Schedule a Consultation</span>
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>

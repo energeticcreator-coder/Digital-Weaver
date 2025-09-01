@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section className="py-24 bg-gradient-subtle">
+    <section id="contact" className="py-24 bg-gradient-subtle">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="text-center mb-16">

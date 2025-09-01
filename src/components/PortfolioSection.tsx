@@ -38,7 +38,7 @@ const PortfolioSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-subtle">
+    <section id="portfolio" className="py-24 bg-gradient-subtle">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="text-center mb-16">
@@ -94,8 +94,15 @@ const PortfolioSection = () => {
                 {/* Action Buttons */}
                 <div className="flex gap-3">
                   <Button variant="outline" size="sm">
+                    <span onClick={() => {
+                      const element = document.getElementById('contact');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}>
                     <ExternalLink className="h-4 w-4 mr-2" />
                     View Case Study
+                    </span>
                   </Button>
                   <Button variant="ghost" size="sm" className="text-muted-foreground">
                     <Github className="h-4 w-4 mr-2" />

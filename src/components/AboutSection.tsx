@@ -25,7 +25,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-subtle">
+    <section id="about" className="py-24 bg-gradient-subtle">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="text-center mb-16">
